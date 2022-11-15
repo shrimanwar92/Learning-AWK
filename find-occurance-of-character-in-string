@@ -1,0 +1,12 @@
+echo "welcome" | awk 'BEGIN {FS=""}
+{
+  for(i=0;i<=NF;i++) {
+    arr[$i]++
+  }
+} 
+
+END {
+  for(i in arr) {
+    print i " >>>>>>>> " arr[i]
+  }
+}'
