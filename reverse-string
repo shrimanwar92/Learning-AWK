@@ -1,0 +1,1 @@
+echo "welcome" | awk 'BEGIN {FS=""} {for(i=NF;i>0;i--) {str=str$i}} END {print str} '
